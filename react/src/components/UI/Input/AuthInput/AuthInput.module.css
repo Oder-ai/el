@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #DBE2EA;
+    color: #7C9CBF;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    box-shadow: 0 4px 8px 0 rgba(44, 39, 56, 0.04);
+    font-weight: 400;
+    border-radius: 6px;
+    padding-left: 10px;
+    transition: .1s all ease-out;
+}
+.input::placeholder {
+    color: #7C9CBF;
+}
+.input:focus {
+    /*border: 2px solid rgba(120, 130, 190, 0.71);*/
+    outline: 2px solid rgba(120, 130, 190, 0.71);
+    outline-offset: -1px;
+}
+.header {
+    color: #756F86;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.error {
+    display: inline-block;
+    color: #FF7171;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.error_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    /*position: absolute;*/
+    /*bottom: -25px;*/
+    /*left: 0;*/
+}

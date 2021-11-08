@@ -1,0 +1,119 @@
+.active {
+    background-color: #359EFF;
+    padding: 3px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    color: #fff;
+    border-radius: 8px;
+}
+.disabled {
+    background-color: #747474;
+    padding: 3px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.td {
+    color: #555555;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+.released {
+    color: #555555;
+}
+.returned {
+    color: #DE9191;
+}
+.paid {
+    color: #359EFF;
+}
+.debt {
+    color: #E4B78E;
+}
+
+.tr {
+    height: 40px;
+    border-bottom: 1px solid rgba(246, 246, 246, 1);
+    transition: .2s all ease-out;
+}
+
+.tr:hover {
+    background-color: #f8f8f8;
+}
+
+.tr_deleted {
+    height: 40px;
+    border-bottom: 1px solid rgba(246, 246, 246, 1);
+    transition: .2s all ease-out;
+    background-color: #C77F7F;
+}
+
+.icon_wrapper {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    /*border-radius: 50%;*/
+    transition: .2s all ease-out;
+    position: relative;
+}
+/*.icon_wrapper:hover {*/
+/*    !*background-color: #ffffff;*!*/
+/*}*/
+/*.icon_wrapper:hover .icon {*/
+/*    fill: #ffffff;*/
+/*}*/
+
+.icon {
+    width: 1.4em;
+    height: 1.4em;
+    fill: #555555;
+}
+
+.action_wrapper {
+    position: absolute;
+    width: 110px;
+    right: 0;
+    bottom: -20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
+    border-radius: 6px;
+    z-index: 1;
+}
+
+.action {
+    border-radius: 6px;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.action:hover {
+    background-color: #fafafa;
+}
+
+.input {
+    height: 30px;
+    padding-left: 10px;
+    max-width: 100px;
+    box-shadow: inset 0 0 2px 1px rgba(44, 39, 56, 0.18);
+    border-radius: 6px;
+}

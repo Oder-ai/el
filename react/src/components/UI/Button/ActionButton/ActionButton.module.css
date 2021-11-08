@@ -1,0 +1,14 @@
+.button {
+    background-color: #7F9CC7;
+    color: #fff;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
+    border-radius: 6px;
+    width: auto;
+    padding: 0 10px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 100ms linear;
+}

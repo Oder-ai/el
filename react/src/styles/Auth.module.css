@@ -1,0 +1,37 @@
+.wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EBF5FF;
+}
+
+.window {
+    width: 30vw;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: content-box;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+@media all and (max-width: 1100px) {
+    .window {
+        width: 50vw;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .window {
+        width: 70vw;
+    }
+}
+@media all and (max-width: 500px) {
+    .window {
+        width: 80vw;
+    }
+}

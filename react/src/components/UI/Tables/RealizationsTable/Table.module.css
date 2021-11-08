@@ -1,0 +1,36 @@
+.table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border-top: 1px solid rgba(246, 246, 246, 1);
+}
+
+.text_header {
+    color: #2C2C2C;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.td{
+    padding-left: 20px;
+    padding-right: 10px;
+    transition: .2s all ease-out;
+}
+
+.td:hover {
+    background-color: #f8f8f8;
+}
+
+.td_inner {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    min-width: .8rem;
+    width: .8rem;
+    min-height: .8rem;
+    height: .8rem;
+    margin-left: 10px;
+}

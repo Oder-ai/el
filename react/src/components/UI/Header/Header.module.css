@@ -1,0 +1,183 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 15px;
+    background-color: #fff;
+    position: relative;
+}
+
+.logo_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.burger {
+    width: 2em;
+    height: 2em;
+    fill: #3a3a3a;
+    margin-bottom: 2px;
+    display: none;
+}
+
+.content {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    color: #3a3a3a;
+}
+
+.user_wrapper {
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    position: relative;
+}
+
+.user_user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+.user_user:hover {
+    background-color: #f6f6f6;
+}
+.user {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #3a3a3a;
+    margin-right: 10px;
+}
+.user_select {
+    margin-top: -2px;
+    width: 1em;
+    height: 1em;
+}
+
+.user_options_off {
+    position: absolute;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+    width: 160px;
+    right: 0;
+    bottom: -70px;
+    border-radius: 5px;
+    z-index: -1;
+    background-color: #fff;
+    opacity: 0;
+    transition: .1s all ease-out;
+}
+
+.user_options_on {
+    bottom: -55px;
+    opacity: 1;
+    position: absolute;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+    width: 160px;
+    right: 0;
+    border-radius: 5px;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.option_logout {
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.option_logout:hover {
+    background-color: #f6f6f6;
+}
+
+.option_logout_logo {
+    margin-left: 10px;
+    width: 1.4em;
+    height: 1.4em;
+}
+.option_logout_text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #3a3a3a;
+    margin-left: 10px;
+}
+.navbar_wrapper {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    z-index: 1;
+    opacity: 0;
+    transition: .2s all ease-out;
+
+}
+.navbar_wrapper_active {
+    left: 0;
+    opacity: 1;
+}
+
+.navbar {
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    left: -200px;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1;
+    opacity: 0;
+    transition: .2s all ease-out;
+    box-shadow: 2px 0 8px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 40px;
+}
+.navbar_active {
+    left: 0;
+    opacity: 1;
+}
+
+.navbar_button {
+    width: 100%;
+    height: 50px;
+    background-color: #4d4d4d;
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    transition: 50ms all ease-out;
+    font-weight: 400;
+    font-size: 16px;
+}
+.navbar_button:hover {
+    background-color: #f8f8f8;
+    color: #4d4d4d;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 940px) {
+    .burger {
+        display: inline-block;
+    }
+}
