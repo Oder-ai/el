@@ -11,5 +11,5 @@ RUN pip3 install -r requirements.txt
 RUN chmod +x entrypoint.sh
 COPY . .
 
-ENTRYPOINT ["/usr/src/app/django/entrypoint.sh"]
+ENTRYPOINT ["/django/entrypoint.sh"]
 

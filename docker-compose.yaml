@@ -8,8 +8,7 @@ volumes:
 
 services:
   postgresdb:
-    build:
-      context: ./postgres
+    image: ober123/el-postgres
     environment:
       - POSTGRES_PASSWORD=Aidar191&
     volumes:
@@ -19,8 +18,7 @@ services:
       - "5432:5432"
 
   backend:
-    build:
-      context: ./django
+    image: ober123/el-django
     volumes:
       - ./:/usr/src/app
       - media_volume:/django/mediafiles
@@ -31,8 +29,7 @@ services:
       - "8000:8000"
 
   frontend:
-    build:
-      context: ./react
+    image: ober123/el-react
     volumes:
       - react_build:/react/build
 
