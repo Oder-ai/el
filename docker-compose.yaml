@@ -23,7 +23,7 @@ services:
       context: ./django
     volumes:
       - ./:/usr/src/app
-      - media_volume:/app/django/mediafiles
+      - media_volume:/django/mediafiles
     depends_on:
       - postgresdb
     command: gunicorn elstep.wsgi --bind 0.0.0.0:8000 --reload
@@ -44,7 +44,7 @@ services:
       - ./nginx/nginx-setup.conf:/etc/nginx/conf.d/default.conf:ro
       - react_build:/var/www/react
       - static_volume:/usr/src/app/django/staticfiles
-      - media_volume:/app/django/mediafiles
+      - media_volume:/data/media
     depends_on:
       - backend
       - frontend
