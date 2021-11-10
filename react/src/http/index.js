@@ -1,7 +1,7 @@
 import axios from "axios";
 
-// export const API_URL = 'http://80.249.151.57:8000/'
-export const API_URL = 'http://localhost:8000/'
+export const API_URL = 'http://80.249.151.57:8000/'
+// export const API_URL = 'http://localhost:8000/'
 export const URL_SLICE = API_URL.length
 
 const $api = axios.create({
