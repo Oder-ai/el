@@ -93,7 +93,6 @@
     padding: 10px;
 
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    max-height: 25%;
     background-color: #ffffff;
 
     border-bottom: 2px solid #F6F6F6;
@@ -118,6 +117,7 @@
     padding: 10px 10px;
     grid-gap: 10px;
     width: 100%;
+    margin-bottom: 8vh;
 }
 
 .modal_content_choiced {
@@ -132,6 +132,11 @@
 
 .modal_footer {
     height: 8%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
     border-radius: 0 0 10px 10px;
     background-color: #f6f6f6;
     display: flex;

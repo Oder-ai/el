@@ -16,7 +16,6 @@
     padding: 10px;
 
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    max-height: 25%;
     background-color: #ffffff;
 }
 .options_filter {

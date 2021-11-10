@@ -134,8 +134,8 @@ const AddRealizationContent = ({changeModal, changeAddPartnerModal, changeProduc
                     className={cl.summ_wrapper}
                 >
                     <span className={cl.summ}>Товаров выбрано: {Products.choiced_product_items.length}</span>
-                    <span className={cl.summ}>Количество пар: {Products.total_pairs}</span>
-                    <span className={cl.summ}>На общую сумму: {Products.total_summ}</span>
+                    <span className={cl.summ}>Количество пар: {Products.Pairs}</span>
+                    <span className={cl.summ}>На общую сумму: {Products.Summ}</span>
                 </div>
                 <div className={cl.products_wrapper}>
                     {Products.choiced_product_items ?

@@ -41,6 +41,8 @@ export default class Products {
 
     total_pairs = 0
     total_summ = 0
+    pairs = 0
+    summ = 0
 
     constructor() {
         makeAutoObservable(this)
@@ -55,6 +57,23 @@ export default class Products {
     }
     async clearChoicedItems() {
         this.choiced_product_items = []
+    }
+
+    get Pairs() {
+        let count = 0
+        for (const i of this.choiced_product_items) {
+            count += Number(i.pairs)
+        }
+        this.pairs = count
+        return this.pairs
+    }
+    get Summ() {
+        let count = 0
+        for (const i of this.choiced_product_items) {
+            count += Number(i.released)
+        }
+        this.summ = count
+        return this.summ
     }
 
     async totalPairs() {
