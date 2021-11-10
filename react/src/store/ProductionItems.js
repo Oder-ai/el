@@ -45,7 +45,6 @@ export default class ProductionItems {
     async clearItems() {
         this.items = []
     }
-
     async setCurrentItem(instance) {
         this.current_item = Object.assign({}, instance)
     }

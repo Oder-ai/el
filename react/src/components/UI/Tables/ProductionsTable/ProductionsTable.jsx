@@ -5,7 +5,7 @@ import DownSvg from "../../Svg/DownSvg";
 import UpSvg from "../../Svg/UpSvg";
 import ProductionsTableItem from "./ProductionsTableItem";
 
-const ProductionsTable = ({Store, items}) => {
+const ProductionsTable = ({Store, items, setModalActive}) => {
 
     const [svg, setSvg] = useState({icon: UpDown})
     const [currentHeader, setCurrentHeader] = useState('')
@@ -213,7 +213,7 @@ const ProductionsTable = ({Store, items}) => {
             </thead>
             <tbody>
             {items.map(item =>
-                <ProductionsTableItem key={item.id} item={item}/>
+                <ProductionsTableItem key={item.id} item={item} setModalActive={setModalActive}/>
             )}
             </tbody>
         </table>

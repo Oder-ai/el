@@ -3,12 +3,15 @@ import cl from './ProductionsTableItem.module.css'
 import OptionSvg from "../../Svg/OptionSvg";
 import {Link} from "react-router-dom";
 import {Context} from "../../../../index";
+import ProductionService from "../../../../services/ProductionService";
 
-const ProductionsTableItem = ({item}) => {
+const ProductionsTableItem = ({item, setModalActive}) => {
 
     const [option, setOption] = useState(false)
     const [changeActive, setChangeActive] = useState(false)
     const {StoreDetail} = useContext(Context)
+    const {ProductionItems} = useContext(Context);
+    const {Productions} = useContext(Context);
 
     return (
         <tr className={cl.tr}>
@@ -84,8 +87,24 @@ const ProductionsTableItem = ({item}) => {
                         className={cl.action_wrapper}
                         onMouseLeave={() => setOption(false)}
                     >
-                        <div className={cl.action}>
+                        <div
+                            className={cl.action}
+                            onClick={async () => {
+                                await ProductionItems.setCurrentItem(item)
+                                console.log(item)
+                                setModalActive(true)
+                            }}
+                        >
                             Изменить
+                        </div>
+                        <div
+                            className={cl.action}
+                            onClick={async () => {
+                                await ProductionService.delete(item.id)
+                                await Productions.getPage()
+                            }}
+                        >
+                            Удалить
                         </div>
                     </div>
                     :

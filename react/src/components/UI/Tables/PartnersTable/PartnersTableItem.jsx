@@ -68,27 +68,27 @@ const PartnersTableItem = ({item}) => {
                     </Link>
 
                 </td>
-                <td className={cl.icon_wrapper}>
-                    <OptionSvg
-                        className={cl.icon}
-                        onClick={() => 
-                            setOption(!option)
-                        }
-                    />
-                    {option ?
-                        <div
-                            className={cl.action_wrapper}
-                            onMouseLeave={() => setOption(false)}
-                        >
-                            <div className={cl.action}>
-                                Изменить
-                            </div>
-                        </div>
-                        :
-                        ''
-                    }
+                {/*<td className={cl.icon_wrapper}>*/}
+                {/*    <OptionSvg*/}
+                {/*        className={cl.icon}*/}
+                {/*        onClick={() => */}
+                {/*            setOption(!option)*/}
+                {/*        }*/}
+                {/*    />*/}
+                {/*    {option ?*/}
+                {/*        <div*/}
+                {/*            className={cl.action_wrapper}*/}
+                {/*            onMouseLeave={() => setOption(false)}*/}
+                {/*        >*/}
+                {/*            <div className={cl.action}>*/}
+                {/*                Изменить*/}
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*        :*/}
+                {/*        ''*/}
+                {/*    }*/}
 
-                </td>
+                {/*</td>*/}
         </tr>
     );
 };

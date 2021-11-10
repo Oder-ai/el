@@ -81,6 +81,7 @@
     background-color: #fff;
     opacity: 0;
     transition: .1s all ease-out;
+    visibility: hidden;
 }
 
 .user_options_on {
@@ -93,6 +94,7 @@
     border-radius: 5px;
     z-index: 1;
     background-color: #fff;
+    visibility: visible;
 }
 
 .option_logout {

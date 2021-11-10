@@ -15,7 +15,7 @@ import {Link} from "react-router-dom";
 import ProductionsTable from "../../UI/Tables/ProductionsTable/ProductionsTable";
 
 
-const RealizationContent = () => {
+const RealizationContent = ({setModalActive}) => {
 
     const {Productions} = useContext(Context);
 
@@ -63,6 +63,7 @@ const RealizationContent = () => {
                     <ProductionsTable
                         Store={Productions}
                         items={Productions.items}
+                        setModalActive={setModalActive}
                     />
                     :
                     <div style={{display: 'flex', justifyContent: 'center', width: '100%'}}>
